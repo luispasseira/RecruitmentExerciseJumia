@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94add088-412e-448c-8bd2-c5d06b2c7767" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/databases/DBSqlLite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/databases/Database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/entities/Entity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/entities/EntityCustomer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberDetailChecker.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberValidator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/EntityCustomerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/IDatabaseBehaviour.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/IEntity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/plugins/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/plugins/pagination/data-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/plugins/pagination/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/phoneNumbers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/plugins/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/plugins/pagination/data-table-options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/plugins/pagination/data-tables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/views/phoneNumbers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/entities/EntityCustomerConverter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Ex_php.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ex_php.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/databases/DBSqlLite.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/databases/DBSqlLite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/EntityCustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/EntityCustomerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,22 +26,60 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="EntityCustomerRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="EntityCustomerController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controllers/EntityCustomerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="272">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding>
+                <element signature="e#552#577#0#PHP" />
+                <element signature="e#578#831#0#PHP" />
+                <element signature="e#630#807#0#PHP" />
+                <element signature="e#724#807#0#PHP" />
+                <element signature="e#833#858#0#PHP" />
+                <element signature="e#859#1121#0#PHP" />
+                <element signature="e#920#1097#0#PHP" />
+                <element signature="e#1014#1097#0#PHP" />
+                <element signature="e#1123#1148#0#PHP" />
+                <element signature="e#1149#1409#0#PHP" />
+                <element signature="e#1208#1385#0#PHP" />
+                <element signature="e#1302#1385#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntityCustomerController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controllers/EntityCustomerController.php">
+      <file leaf-file-name="EntityCustomerRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityCustomerConverter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomerConverter.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+              <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="phoneNumbers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/phoneNumbers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!block;n#paginateTable#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,39 +87,39 @@
       <file leaf-file-name="EntityCustomer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-431">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state relative-caret-position="222">
+              <caret line="28" column="62" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="62" />
               <folding>
-                <element signature="e#352#395#0#PHP" />
-                <element signature="e#401#440#0#PHP" />
-                <element signature="e#445#545#0#PHP" />
-                <element signature="e#551#590#0#PHP" />
-                <element signature="e#595#711#0#PHP" />
-                <element signature="e#717#766#0#PHP" />
-                <element signature="e#771#896#0#PHP" />
-                <element signature="e#902#951#0#PHP" />
-                <element signature="e#956#1081#0#PHP" />
-                <element signature="e#1087#1128#0#PHP" />
-                <element signature="e#1134#1177#0#PHP" />
-                <element signature="e#1183#1216#0#PHP" />
-                <element signature="e#1221#1308#0#PHP" />
-                <element signature="e#1314#1355#0#PHP" />
-                <element signature="e#1361#1417#0#PHP" />
-                <element signature="e#1423#1456#0#PHP" />
-                <element signature="e#1461#1545#0#PHP" />
-                <element signature="e#1551#1583#0#PHP" />
-                <element signature="e#1588#1739#0#PHP" />
-                <element signature="e#1656#1732#0#PHP" />
-                <element signature="e#1662#1731#1#PHP" />
-                <element signature="e#1745#1799#0#PHP" />
-                <element signature="e#1805#1860#0#PHP" />
-                <element signature="e#1866#1916#0#PHP" />
-                <element signature="e#1921#2084#0#PHP" />
-                <element signature="e#2090#2138#0#PHP" />
-                <element signature="e#2143#2310#0#PHP" />
-                <element signature="e#2316#2364#0#PHP" />
-                <element signature="e#2369#2536#0#PHP" />
-                <element signature="e#2542#2595#0#PHP" />
+                <element signature="e#262#305#0#PHP" />
+                <element signature="e#311#350#0#PHP" />
+                <element signature="e#355#455#0#PHP" />
+                <element signature="e#461#500#0#PHP" />
+                <element signature="e#505#621#0#PHP" />
+                <element signature="e#627#676#0#PHP" />
+                <element signature="e#681#806#0#PHP" />
+                <element signature="e#812#861#0#PHP" />
+                <element signature="e#866#991#0#PHP" />
+                <element signature="e#997#1038#0#PHP" />
+                <element signature="e#1044#1087#0#PHP" />
+                <element signature="e#1093#1126#0#PHP" />
+                <element signature="e#1131#1218#0#PHP" />
+                <element signature="e#1224#1265#0#PHP" />
+                <element signature="e#1271#1327#0#PHP" />
+                <element signature="e#1333#1366#0#PHP" />
+                <element signature="e#1371#1455#0#PHP" />
+                <element signature="e#1461#1493#0#PHP" />
+                <element signature="e#1498#1649#0#PHP" />
+                <element signature="e#1566#1642#0#PHP" />
+                <element signature="e#1572#1641#1#PHP" />
+                <element signature="e#1655#1709#0#PHP" />
+                <element signature="e#1715#1770#0#PHP" />
+                <element signature="e#1776#1826#0#PHP" />
+                <element signature="e#1831#1994#0#PHP" />
+                <element signature="e#2000#2048#0#PHP" />
+                <element signature="e#2053#2220#0#PHP" />
+                <element signature="e#2226#2274#0#PHP" />
+                <element signature="e#2279#2446#0#PHP" />
+                <element signature="e#2452#2505#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -87,77 +128,65 @@
       <file leaf-file-name="DBSqlLite.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classes/databases/DBSqlLite.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state relative-caret-position="51">
+              <caret line="6" column="98" selection-start-line="6" selection-start-column="98" selection-end-line="6" selection-end-column="98" />
               <folding>
-                <element signature="e#184#226#0#PHP" />
-                <element signature="e#286#359#0#PHP" />
-                <element signature="e#364#560#0#PHP" />
-                <element signature="e#343#386#0#PHP" />
-                <element signature="e#611#659#0#PHP" />
-                <element signature="e#664#788#0#PHP" />
-                <element signature="e#801#836#0#PHP" />
-                <element signature="e#841#934#0#PHP" />
-                <element signature="e#1078#1119#0#PHP" />
-                <element signature="e#443#486#0#PHP" />
-                <element signature="e#492#525#0#PHP" />
-                <element signature="e#857#943#0#PHP" />
-                <element signature="e#1169#1200#0#PHP" />
-                <element signature="e#1205#1288#0#PHP" />
-                <element signature="e#600#641#0#PHP" />
-                <element signature="e#1352#1408#0#PHP" />
-                <element signature="e#1418#1449#0#PHP" />
-                <element signature="e#1403#1711#0#PHP" />
-                <element signature="e#1551#1582#0#PHP" />
-                <element signature="e#1587#1680#0#PHP" />
-                <element signature="e#1855#1916#0#PHP" />
-                <element signature="e#1855#2027#0#PHP" />
-                <element signature="e#1998#2087#0#PHP" />
-                <element signature="e#2092#2294#0#PHP" />
-                <element signature="e#2315#2369#0#PHP" />
-                <element signature="e#2375#2430#0#PHP" />
-                <element signature="e#2436#2494#0#PHP" />
-                <element signature="e#2459#2555#0#PHP" />
-                <element signature="e#2825#2885#0#PHP" />
-                <element signature="e#2830#3069#0#PHP" />
-                <element signature="e#2601#2654#0#PHP" />
+                <element signature="e#147#190#0#PHP" />
+                <element signature="e#196#269#0#PHP" />
+                <element signature="e#274#470#0#PHP" />
+                <element signature="e#476#519#0#PHP" />
+                <element signature="e#525#573#0#PHP" />
+                <element signature="e#578#705#0#PHP" />
+                <element signature="e#711#746#0#PHP" />
+                <element signature="e#751#849#0#PHP" />
+                <element signature="e#855#896#0#PHP" />
+                <element signature="e#902#945#0#PHP" />
+                <element signature="e#951#984#0#PHP" />
+                <element signature="e#989#1088#0#PHP" />
+                <element signature="e#1094#1125#0#PHP" />
+                <element signature="e#1130#1213#0#PHP" />
+                <element signature="e#1219#1260#0#PHP" />
+                <element signature="e#1266#1322#0#PHP" />
+                <element signature="e#1328#1359#0#PHP" />
+                <element signature="e#1364#1455#0#PHP" />
+                <element signature="e#1461#1492#0#PHP" />
+                <element signature="e#1497#1590#0#PHP" />
+                <element signature="e#1596#1657#0#PHP" />
+                <element signature="e#1662#1966#0#PHP" />
+                <element signature="e#1770#1935#0#PHP" />
+                <element signature="e#0#40#1" />
+                <element signature="e#1972#2061#0#PHP" />
+                <element signature="e#2197#2403#0#PHP" />
+                <element signature="e#2440#2494#0#PHP" />
+                <element signature="e#2500#2555#0#PHP" />
+                <element signature="e#2561#2619#0#PHP" />
+                <element signature="e#2624#2959#0#PHP" />
+                <element signature="e#2722#2923#0#PHP" />
+                <element signature="e#2965#3025#0#PHP" />
+                <element signature="e#3030#3269#0#PHP" />
+                <element signature="e#3275#3328#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/databases/Database.php">
+      <file leaf-file-name="phoneNumbers.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/phoneNumbers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#224#268#0#PHP" />
-                <element signature="e#273#381#0#PHP" />
-                <element signature="e#391#439#0#PHP" />
-                <element signature="e#444#568#0#PHP" />
-                <element signature="e#574#609#0#PHP" />
-                <element signature="e#614#707#0#PHP" />
-                <element signature="e#711#744#0#PHP" />
-                <element signature="e#749#842#0#PHP" />
-                <element signature="e#387#418#0#PHP" />
-                <element signature="e#423#495#0#PHP" />
-                <element signature="e#507#695#0#PHP" />
-                <element signature="e#628#695#0#PHP" />
-                <element signature="e#501#532#0#PHP" />
-                <element signature="e#1379#1469#0#PHP" />
-                <element signature="e#616#677#0#PHP" />
-                <element signature="e#682#763#0#PHP" />
-                <element signature="e#769#858#0#PHP" />
-                <element signature="e#863#967#0#PHP" />
-                <element signature="e#973#1033#0#PHP" />
-                <element signature="e#1038#1125#0#PHP" />
-              </folding>
+            <state relative-caret-position="589">
+              <caret line="43" column="45" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -175,10 +204,17 @@
         <option value="$PROJECT_DIR$/src/interfaces/IEntity.php" />
         <option value="$PROJECT_DIR$/src/classes/entities/Entity.php" />
         <option value="$PROJECT_DIR$/src/classes/databases/Database.php" />
-        <option value="$PROJECT_DIR$/src/classes/databases/DBSqlLite.php" />
-        <option value="$PROJECT_DIR$/src/classes/entities/EntityCustomer.php" />
-        <option value="$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php" />
+        <option value="$PROJECT_DIR$/public/js/plugins/jquery.min.js" />
+        <option value="$PROJECT_DIR$/public/views/app.html" />
+        <option value="$PROJECT_DIR$/public/views/phoneNumbers.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa6012.49655/refood-site/web/view/js/refood/refood_list.js" />
         <option value="$PROJECT_DIR$/src/controllers/EntityCustomerController.php" />
+        <option value="$PROJECT_DIR$/src/classes/entities/EntityCustomer.php" />
+        <option value="$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberValidator.php" />
+        <option value="$PROJECT_DIR$/src/classes/entities/EntityCustomerConverter.php" />
+        <option value="$PROJECT_DIR$/src/classes/databases/DBSqlLite.php" />
+        <option value="$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php" />
+        <option value="$PROJECT_DIR$/public/js/phoneNumbers.js" />
       </list>
     </option>
   </component>
@@ -191,9 +227,14 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="70" />
-    <option name="y" value="92" />
+    <option name="x" value="36" />
+    <option name="y" value="117" />
     <option name="width" value="749" />
     <option name="height" value="614" />
   </component>
@@ -219,6 +260,33 @@
             <path>
               <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
               <item name="RecruitmentExerciseJumia" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RecruitmentExerciseJumia" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RecruitmentExerciseJumia" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="pagination" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RecruitmentExerciseJumia" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RecruitmentExerciseJumia" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -240,6 +308,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RecruitmentExerciseJumia" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="phoneNumberHelpers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
@@ -274,7 +349,15 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\public\css\plugins\pagination" />
+      <recent name="C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\public\js\plugins" />
+      <recent name="C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\public\css\plugins" />
+      <recent name="C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\public\css" />
+      <recent name="C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\public\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\public\css\plugins\pagination" />
       <recent name="C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\src\classes\phoneNumberHelpers" />
       <recent name="C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\src\classes\entities" />
       <recent name="C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\src\classes\databases" />
@@ -303,12 +386,21 @@
       <option name="presentableId" value="Default" />
       <updated>1546546565476</updated>
       <workItem from="1546546569070" duration="277000" />
-      <workItem from="1546627455404" duration="15995000" />
+      <workItem from="1546627455404" duration="20702000" />
+      <workItem from="1546704110357" duration="2836000" />
     </task>
+    <task id="LOCAL-00001" summary="New: Created Database, DBSqlLite classes and IDatabaseBehaviour interface; Entity, EntityCustomer classes and IEntity interface; EntityCustomerController; PhoneNumberDetailChecker and PhoneNumberValidator classes;">
+      <created>1546697799363</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546697799363</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16272000" />
+    <option name="totallyTimeSpent" value="23815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
@@ -317,10 +409,10 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32935917" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32935917" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.23695976" />
@@ -341,12 +433,97 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New: Created Database, DBSqlLite classes and IDatabaseBehaviour interface; Entity, EntityCustomer classes and IEntity interface; EntityCustomerController; PhoneNumberDetailChecker and PhoneNumberValidator classes;" />
+    <option name="LAST_COMMIT_MESSAGE" value="New: Created Database, DBSqlLite classes and IDatabaseBehaviour interface; Entity, EntityCustomer classes and IEntity interface; EntityCustomerController; PhoneNumberDetailChecker and PhoneNumberValidator classes;" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/controllers/EntityCustomerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding>
+            <element signature="e#833#858#0#PHP" />
+            <element signature="e#1123#1148#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/phoneNumbers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding>
+            <element signature="e#262#305#0#PHP" />
+            <element signature="e#311#350#0#PHP" />
+            <element signature="e#355#455#0#PHP" />
+            <element signature="e#461#500#0#PHP" />
+            <element signature="e#505#621#0#PHP" />
+            <element signature="e#627#676#0#PHP" />
+            <element signature="e#681#806#0#PHP" />
+            <element signature="e#812#861#0#PHP" />
+            <element signature="e#866#991#0#PHP" />
+            <element signature="e#997#1038#0#PHP" />
+            <element signature="e#1044#1087#0#PHP" />
+            <element signature="e#1093#1126#0#PHP" />
+            <element signature="e#1131#1218#0#PHP" />
+            <element signature="e#1224#1265#0#PHP" />
+            <element signature="e#1271#1327#0#PHP" />
+            <element signature="e#1333#1366#0#PHP" />
+            <element signature="e#1371#1455#0#PHP" />
+            <element signature="e#1461#1493#0#PHP" />
+            <element signature="e#1498#1649#0#PHP" />
+            <element signature="e#1566#1642#0#PHP" />
+            <element signature="e#1572#1641#1#PHP" />
+            <element signature="e#1655#1709#0#PHP" />
+            <element signature="e#1715#1770#0#PHP" />
+            <element signature="e#1776#1826#0#PHP" />
+            <element signature="e#1831#1994#0#PHP" />
+            <element signature="e#2000#2048#0#PHP" />
+            <element signature="e#2053#2220#0#PHP" />
+            <element signature="e#2226#2274#0#PHP" />
+            <element signature="e#2279#2446#0#PHP" />
+            <element signature="e#2452#2505#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/databases/DBSqlLite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/databases/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/phoneNumbers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" selection-start-line="4" selection-start-column="37" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#paginateTable#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -377,27 +554,6 @@
             <element signature="e#150#283#0#PHP" />
             <element signature="e#1338#1399#0#PHP" />
             <element signature="e#293#421#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-          <folding>
-            <element signature="e#555#614#0#PHP" />
-            <element signature="e#619#767#0#PHP" />
-            <element signature="e#773#832#0#PHP" />
-            <element signature="e#837#983#0#PHP" />
-            <element signature="e#989#1048#0#PHP" />
-            <element signature="e#1053#1197#0#PHP" />
-            <element signature="e#1203#1262#0#PHP" />
-            <element signature="e#1267#1415#0#PHP" />
-            <element signature="e#1421#1480#0#PHP" />
-            <element signature="e#1485#1623#0#PHP" />
-            <element signature="e#1134#1321#0#PHP" />
-            <element signature="e#1326#1867#0#PHP" />
           </folding>
         </state>
       </provider>
@@ -433,123 +589,210 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/databases/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/plugins/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="86841" selection-start-line="1" selection-start-column="86841" selection-end-line="1" selection-end-column="86841" />
           <folding>
-            <element signature="e#224#268#0#PHP" />
-            <element signature="e#273#381#0#PHP" />
-            <element signature="e#391#439#0#PHP" />
-            <element signature="e#444#568#0#PHP" />
-            <element signature="e#574#609#0#PHP" />
-            <element signature="e#614#707#0#PHP" />
-            <element signature="e#711#744#0#PHP" />
-            <element signature="e#749#842#0#PHP" />
-            <element signature="e#387#418#0#PHP" />
-            <element signature="e#423#495#0#PHP" />
-            <element signature="e#507#695#0#PHP" />
-            <element signature="e#628#695#0#PHP" />
-            <element signature="e#501#532#0#PHP" />
-            <element signature="e#1379#1469#0#PHP" />
-            <element signature="e#616#677#0#PHP" />
-            <element signature="e#682#763#0#PHP" />
-            <element signature="e#769#858#0#PHP" />
-            <element signature="e#863#967#0#PHP" />
-            <element signature="e#973#1033#0#PHP" />
-            <element signature="e#1038#1125#0#PHP" />
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/plugins/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/plugins/pagination/pagination.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/plugins/pagination/data-tables.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa6012.47140/address.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1417" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6012.49655/refood-site/web/view/js/refood/refood_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="54" column="43" lean-forward="true" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6012.49655/refood-site/web/view/js/refood/refood_edit.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6012.49655/refood-site/web/view/js/refood/refood.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6012.4155/refood-site/web/view/js/refood/refood_edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/phoneNumbers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="28" column="62" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="62" />
+          <folding>
+            <element signature="e#262#305#0#PHP" />
+            <element signature="e#311#350#0#PHP" />
+            <element signature="e#355#455#0#PHP" />
+            <element signature="e#461#500#0#PHP" />
+            <element signature="e#505#621#0#PHP" />
+            <element signature="e#627#676#0#PHP" />
+            <element signature="e#681#806#0#PHP" />
+            <element signature="e#812#861#0#PHP" />
+            <element signature="e#866#991#0#PHP" />
+            <element signature="e#997#1038#0#PHP" />
+            <element signature="e#1044#1087#0#PHP" />
+            <element signature="e#1093#1126#0#PHP" />
+            <element signature="e#1131#1218#0#PHP" />
+            <element signature="e#1224#1265#0#PHP" />
+            <element signature="e#1271#1327#0#PHP" />
+            <element signature="e#1333#1366#0#PHP" />
+            <element signature="e#1371#1455#0#PHP" />
+            <element signature="e#1461#1493#0#PHP" />
+            <element signature="e#1498#1649#0#PHP" />
+            <element signature="e#1566#1642#0#PHP" />
+            <element signature="e#1572#1641#1#PHP" />
+            <element signature="e#1655#1709#0#PHP" />
+            <element signature="e#1715#1770#0#PHP" />
+            <element signature="e#1776#1826#0#PHP" />
+            <element signature="e#1831#1994#0#PHP" />
+            <element signature="e#2000#2048#0#PHP" />
+            <element signature="e#2053#2220#0#PHP" />
+            <element signature="e#2226#2274#0#PHP" />
+            <element signature="e#2279#2446#0#PHP" />
+            <element signature="e#2452#2505#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <element signature="e#56#115#0#PHP" />
+            <element signature="e#120#268#0#PHP" />
+            <element signature="e#274#333#0#PHP" />
+            <element signature="e#338#484#0#PHP" />
+            <element signature="e#490#549#0#PHP" />
+            <element signature="e#554#698#0#PHP" />
+            <element signature="e#704#763#0#PHP" />
+            <element signature="e#768#916#0#PHP" />
+            <element signature="e#922#981#0#PHP" />
+            <element signature="e#986#1124#0#PHP" />
+            <element signature="e#1130#1317#0#PHP" />
+            <element signature="e#1322#1863#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/databases/DBSqlLite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="51">
+          <caret line="6" column="98" selection-start-line="6" selection-start-column="98" selection-end-line="6" selection-end-column="98" />
           <folding>
-            <element signature="e#184#226#0#PHP" />
-            <element signature="e#286#359#0#PHP" />
-            <element signature="e#364#560#0#PHP" />
-            <element signature="e#343#386#0#PHP" />
-            <element signature="e#611#659#0#PHP" />
-            <element signature="e#664#788#0#PHP" />
-            <element signature="e#801#836#0#PHP" />
-            <element signature="e#841#934#0#PHP" />
-            <element signature="e#1078#1119#0#PHP" />
-            <element signature="e#443#486#0#PHP" />
-            <element signature="e#492#525#0#PHP" />
-            <element signature="e#857#943#0#PHP" />
-            <element signature="e#1169#1200#0#PHP" />
-            <element signature="e#1205#1288#0#PHP" />
-            <element signature="e#600#641#0#PHP" />
-            <element signature="e#1352#1408#0#PHP" />
-            <element signature="e#1418#1449#0#PHP" />
-            <element signature="e#1403#1711#0#PHP" />
-            <element signature="e#1551#1582#0#PHP" />
-            <element signature="e#1587#1680#0#PHP" />
-            <element signature="e#1855#1916#0#PHP" />
-            <element signature="e#1855#2027#0#PHP" />
-            <element signature="e#1998#2087#0#PHP" />
-            <element signature="e#2092#2294#0#PHP" />
-            <element signature="e#2315#2369#0#PHP" />
-            <element signature="e#2375#2430#0#PHP" />
-            <element signature="e#2436#2494#0#PHP" />
-            <element signature="e#2459#2555#0#PHP" />
-            <element signature="e#2825#2885#0#PHP" />
-            <element signature="e#2830#3069#0#PHP" />
-            <element signature="e#2601#2654#0#PHP" />
+            <element signature="e#147#190#0#PHP" />
+            <element signature="e#196#269#0#PHP" />
+            <element signature="e#274#470#0#PHP" />
+            <element signature="e#476#519#0#PHP" />
+            <element signature="e#525#573#0#PHP" />
+            <element signature="e#578#705#0#PHP" />
+            <element signature="e#711#746#0#PHP" />
+            <element signature="e#751#849#0#PHP" />
+            <element signature="e#855#896#0#PHP" />
+            <element signature="e#902#945#0#PHP" />
+            <element signature="e#951#984#0#PHP" />
+            <element signature="e#989#1088#0#PHP" />
+            <element signature="e#1094#1125#0#PHP" />
+            <element signature="e#1130#1213#0#PHP" />
+            <element signature="e#1219#1260#0#PHP" />
+            <element signature="e#1266#1322#0#PHP" />
+            <element signature="e#1328#1359#0#PHP" />
+            <element signature="e#1364#1455#0#PHP" />
+            <element signature="e#1461#1492#0#PHP" />
+            <element signature="e#1497#1590#0#PHP" />
+            <element signature="e#1596#1657#0#PHP" />
+            <element signature="e#1662#1966#0#PHP" />
+            <element signature="e#1770#1935#0#PHP" />
+            <element signature="e#0#40#1" />
+            <element signature="e#1972#2061#0#PHP" />
+            <element signature="e#2197#2403#0#PHP" />
+            <element signature="e#2440#2494#0#PHP" />
+            <element signature="e#2500#2555#0#PHP" />
+            <element signature="e#2561#2619#0#PHP" />
+            <element signature="e#2624#2959#0#PHP" />
+            <element signature="e#2722#2923#0#PHP" />
+            <element signature="e#2965#3025#0#PHP" />
+            <element signature="e#3030#3269#0#PHP" />
+            <element signature="e#3275#3328#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomer.php">
+    <entry file="file://$PROJECT_DIR$/public/js/phoneNumbers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-431">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="459">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
           <folding>
-            <element signature="e#352#395#0#PHP" />
-            <element signature="e#401#440#0#PHP" />
-            <element signature="e#445#545#0#PHP" />
-            <element signature="e#551#590#0#PHP" />
-            <element signature="e#595#711#0#PHP" />
-            <element signature="e#717#766#0#PHP" />
-            <element signature="e#771#896#0#PHP" />
-            <element signature="e#902#951#0#PHP" />
-            <element signature="e#956#1081#0#PHP" />
-            <element signature="e#1087#1128#0#PHP" />
-            <element signature="e#1134#1177#0#PHP" />
-            <element signature="e#1183#1216#0#PHP" />
-            <element signature="e#1221#1308#0#PHP" />
-            <element signature="e#1314#1355#0#PHP" />
-            <element signature="e#1361#1417#0#PHP" />
-            <element signature="e#1423#1456#0#PHP" />
-            <element signature="e#1461#1545#0#PHP" />
-            <element signature="e#1551#1583#0#PHP" />
-            <element signature="e#1588#1739#0#PHP" />
-            <element signature="e#1656#1732#0#PHP" />
-            <element signature="e#1662#1731#1#PHP" />
-            <element signature="e#1745#1799#0#PHP" />
-            <element signature="e#1805#1860#0#PHP" />
-            <element signature="e#1866#1916#0#PHP" />
-            <element signature="e#1921#2084#0#PHP" />
-            <element signature="e#2090#2138#0#PHP" />
-            <element signature="e#2143#2310#0#PHP" />
-            <element signature="e#2316#2364#0#PHP" />
-            <element signature="e#2369#2536#0#PHP" />
-            <element signature="e#2542#2595#0#PHP" />
+            <element signature="n#!!block;n#paginateTable#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomerConverter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/EntityCustomerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        <state relative-caret-position="272">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#552#577#0#PHP" />
+            <element signature="e#578#831#0#PHP" />
+            <element signature="e#630#807#0#PHP" />
+            <element signature="e#724#807#0#PHP" />
+            <element signature="e#833#858#0#PHP" />
+            <element signature="e#859#1121#0#PHP" />
+            <element signature="e#920#1097#0#PHP" />
+            <element signature="e#1014#1097#0#PHP" />
+            <element signature="e#1123#1148#0#PHP" />
+            <element signature="e#1149#1409#0#PHP" />
+            <element signature="e#1208#1385#0#PHP" />
+            <element signature="e#1302#1385#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>

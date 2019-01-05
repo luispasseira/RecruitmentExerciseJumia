@@ -4,7 +4,7 @@ namespace REJ;
 
 class DBSqlLite extends Database
 {
-    protected $connectionPath;
+    protected $connectionPath = "C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\database";
     protected $connection;
 
     //private constructor
@@ -98,7 +98,13 @@ class DBSqlLite extends Database
      */
     public function getAll(Entity $entity): array
     {
-        return $this->executeQuery("SELECT * FROM " . $entity->getTableName());
+        $result = array(['Failed to load...']);
+        if ($this->openConnection()) {
+            $result = $this->executeQuery("SELECT * FROM " . $entity->getTableName());
+            $this->closeConnection();
+        }
+
+        return $result;
     }
 
     /**
@@ -108,8 +114,13 @@ class DBSqlLite extends Database
      */
     public function getAllByFields(Entity $entity, array $fields): array
     {
-        return $this->executeQuery("SELECT " . $this->getStringFromArray($fields) . " FROM " . $entity->getTableName());
+        $result = array(['Failed to load...']);
+        if ($this->openConnection()) {
+            $result = $this->executeQuery("SELECT " . $this->getStringFromArray($fields) . " FROM " . $entity->getTableName());
+            $this->closeConnection();
+        }
 
+        return $result;
     }
 
     /**
