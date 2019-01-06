@@ -1,28 +1,13 @@
 <?php
 
-namespace REJ;
+namespace databases;
 
-class DBSqlLite extends Database
+use entities\Entity;
+
+class DBSqlLite implements \IDatabaseBehaviour
 {
-    protected $connectionPath = "C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\database";
+    protected $connectionPath = "C:\wamp64\www\RecruitmentExerciseJumia\database\\";
     protected $connection;
-
-    //private constructor
-    private function __construct()
-    {
-
-    }
-
-    /**
-     * @param string $connectionPath
-     * @return DBSqlLite
-     */
-    public static function withConnectionPath(string $connectionPath): self
-    {
-        $instance = new self();
-        $instance->setConnectionPath($connectionPath);
-        return $instance;
-    }
 
     /**
      ******* BEGIN SETS *******
@@ -33,7 +18,7 @@ class DBSqlLite extends Database
      */
     public function setConnectionPath(string $connectionPath): void
     {
-        parent::setConnectionPath($connectionPath);
+        $this->connectionPath = $connectionPath;
     }
 
     /**
@@ -41,7 +26,7 @@ class DBSqlLite extends Database
      */
     protected function setConnection(\PDO $PDO): void
     {
-        parent::setConnection($PDO);
+        $this->connection = $PDO;
     }
 
     /**
@@ -57,7 +42,7 @@ class DBSqlLite extends Database
      */
     public function getConnectionPath(): string
     {
-        return parent::getConnectionPath();
+        return $this->connectionPath;
     }
 
     /**
@@ -81,7 +66,15 @@ class DBSqlLite extends Database
      */
     public function openConnection(): bool
     {
-        return parent::openConnection();
+        $isConnected = false;
+
+        try {
+            $this->setConnection(new \PDO($this->getConnectionPath()));
+            $isConnected = true;
+        } catch (\Exception $ex) {
+            return $isConnected;
+        }
+        return $isConnected;
     }
 
     /**
@@ -89,14 +82,14 @@ class DBSqlLite extends Database
      */
     public function closeConnection(): bool
     {
-        return parent::closeConnection();
+        return $this->connection = null;
     }
 
     /**
-     * @param Entity $entity
+     * @param \IEntity $entity
      * @return array
      */
-    public function getAll(Entity $entity): array
+    public function getAll(\IEntity $entity): array
     {
         $result = array(['Failed to load...']);
         if ($this->openConnection()) {
@@ -112,7 +105,7 @@ class DBSqlLite extends Database
      * @param array $fields
      * @return array
      */
-    public function getAllByFields(Entity $entity, array $fields): array
+    public function getAllByFields(\IEntity $entity, array $fields): array
     {
         $result = array(['Failed to load...']);
         if ($this->openConnection()) {

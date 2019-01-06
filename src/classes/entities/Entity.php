@@ -6,7 +6,7 @@
  * Time: 8:05 PM
  */
 
-namespace REJ;
+namespace entities;
 
 
 class Entity implements \IEntity

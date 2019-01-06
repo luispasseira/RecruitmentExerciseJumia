@@ -2,6 +2,6 @@
 interface IDatabaseBehaviour{
     public function openConnection() : bool;
     public function closeConnection() : bool;
-    public function getAll(\REJ\Entity $entity) : array;
-    public function getAllByFields(\REJ\Entity $entity, array $fields) : array;
+    public function getAll(IEntity $entity) : array;
+    public function getAllByFields(IEntity $entity, array $fields) : array;
 }

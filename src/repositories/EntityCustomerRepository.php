@@ -1,15 +1,18 @@
 <?php
 
-namespace REJ;
+namespace repositories;
+
+use databases\DBSqlLite;
+use entities\EntityCustomer;
+use REJ\EntityCustomerConverter;
+
 
 class EntityCustomerRepository
 {
     public static function findAllPhoneNumbers(): array
     {
-        $connectionPath = "C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\database";
-        $dbConnection = DBSqlLite::withConnectionPath($connectionPath);
-
-        $queryResult = $dbConnection->getAllByFields(new Entity(), array(['phone']));
+        $dbConnection = new DBSqlLite();
+        $queryResult = $dbConnection->getAllByFields(new EntityCustomer(), array(['phone']));
 
         return EntityCustomerConverter::convertArrayStringIntoCustomersPhoneNumbers($queryResult);
     }
@@ -19,7 +22,7 @@ class EntityCustomerRepository
         $connectionPath = "C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\database";
         $dbConnection = DBSqlLite::withConnectionPath($connectionPath);
 
-        $queryResult = $dbConnection->getAllByFields(new Entity(), array(['phone']));
+        $queryResult = $dbConnection->getAllByFields(new EntityCustomer(), array(['phone']));
 
         return EntityCustomerConverter::convertArrayStringIntoCustomersPhoneNumbers($queryResult);
     }

@@ -1,18 +1,15 @@
 <?php
 
-use REJ\EntityCustomerRepository;
+use repositories\EntityCustomerRepository;
 
-/**
- * @return string
- */
-function indexCustomersPhoneNumbers(): string
+function indexCustomersPhoneNumbers(): void
 {
-    /*try {
-        $response = json_encode(EntityCustomerRepository::findAllPhoneNumbers());
+    try {
+        $response = EntityCustomerRepository::findAllPhoneNumbers();
     } catch (\Exception $exception) {
-        $response = $exception->getMessage();
-    }*/
-    return json_encode(['coisas'=>'da vida']);
+        $response = ['message' => $exception->getMessage()];
+    }
+    echo json_encode($response);
 }
 
 /**

@@ -1,6 +1,9 @@
 <?php
 
-namespace REJ;
+namespace entities;
+
+use REJ\PhoneNumberDetailChecker;
+use REJ\PhoneNumberValidator;
 
 class EntityCustomer extends Entity
 {
