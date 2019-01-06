@@ -21,7 +21,7 @@ function getPhoneNumbers() {
     $.ajax({
         type: 'post',
         contentType: 'application/json; charset=utf-8',
-        url: '../../src/controllers/EntityCustomerController.php',
+        url: '/',
         data: {functionCall: 'indexCustomersPhoneNumbers'},
         dataType: 'json',
         success: function (data) {
