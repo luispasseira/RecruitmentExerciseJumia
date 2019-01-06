@@ -19,7 +19,7 @@ function fillDataTableContent(data) {
 
 function getPhoneNumbers() {
     $.ajax({
-        type: 'POST',
+        type: 'post',
         contentType: 'application/json; charset=utf-8',
         url: '../../src/controllers/EntityCustomerController.php',
         data: {functionCall: 'indexCustomersPhoneNumbers'},
@@ -28,8 +28,9 @@ function getPhoneNumbers() {
             console.log(data);
             fillDataTableContent(data);
         },
-        error: function () {
-
+        error: function (data) {
+            console.log('error');
+            console.log(data);
         }
     });
 }

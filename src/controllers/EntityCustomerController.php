@@ -31,9 +31,10 @@ function indexCustomersPhoneNumbers(): string
 }
 
 /**
+ * @param string $country
  * @return string
  */
-function indexCustomersPhoneNumbersByCountry(): string
+function indexCustomersPhoneNumbersByCountry(string $country): string
 {
     try {
         $response = json_encode(EntityCustomerRepository::findAllPhoneNumbers());
@@ -44,9 +45,10 @@ function indexCustomersPhoneNumbersByCountry(): string
 }
 
 /**
+ * @param string $state
  * @return string
  */
-function indexCustomersPhoneNumbersByState(): string
+function indexCustomersPhoneNumbersByState(string $state): string
 {
     try {
         $response = json_encode(EntityCustomerRepository::findAllPhoneNumbers());
