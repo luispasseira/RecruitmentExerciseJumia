@@ -11,8 +11,10 @@
 
     <!-- Styles -->
     <link href="../css/app.css" rel="stylesheet">
-    <link href="../css/plugins/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <!--<link href="../css/plugins/bootstrap.css" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">-->
+    <link href="../css/plugins/pagination/data-table.css" rel="stylesheet">
+    <link href="../css/plugins/pagination/pagination.css" rel="stylesheet">
 </head>
 <body>
 <div>
@@ -38,13 +40,7 @@
                     </select>
                     <br>&nbsp;
                     <table id="tablePhoneNumbers" class="table">
-                        <thead>
-                        <tr>
-                            <th scope="col">Country</th>
-                            <th scope="col">State</th>
-                            <th scope="col">Country code</th>
-                            <th scope="col">Phone num.</th>
-                        </tr>
+                        <thead id="tablePhoneNumbersHead">
                         </thead>
                         <tbody id="tablePhoneNumbersBody">
                         </tbody>
@@ -56,7 +52,10 @@
     </main>
 </div>
 
-<script src="../js/plugins/jquery.min.js"></script>
+<script src="../js/plugins/jquery/jquery.min.js"></script>
+<script src="../js/plugins/pagination/data-tables.js"></script>
+<script src="../js/plugins/pagination/data-table-options.js"></script>
+<script src="../js/tableActions.js"></script>
 <script src="../js/phoneNumbers.js"></script>
 </body>
 </html>

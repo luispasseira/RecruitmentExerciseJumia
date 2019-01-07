@@ -1,27 +1,44 @@
-var dataTable = ('#tablePhoneNumbers');
-var dataTableBody = ('#tablePhoneNumbersBody');
+//vars
+const dataTable = $('#tablePhoneNumbers');
+const dataTableHead = $('#tablePhoneNumbersHead');
+const dataTableBody = $('#tablePhoneNumbersBody');
 
-//creates pages in the given table.
-function paginateTable(table, limit) {
-    table.DataTable({
-        destroy: true,
-        "pageLength": limit,
-        "bLengthChange": false,
-        "bAutoWidth": false,
-    });
+//functions
+function emptyTableContent(table) {
+    table.empty();
+}
+
+function fillDataTableContentHead() {
+    emptyTableContent(dataTableHead);
+    dataTableHead.append("<tr><th scope=\"col\">Country</th>\<th scope=\"col\">State</th><th scope=\"col\">Country code</th><th scope=\"col\">Phone num.</th></tr>");
+}
+
+function fillDataTableContentBody(data) {
+    emptyTableContent(dataTableBody);
+    for (let i = 0; i < data.length; i++) {
+        dataTableBody.append("<tr><td>" + data[i].country + "</td> <td>" + (data[i].state ? "OK" : "NOK") + "</td> <td>+" + data[i].country_code + "</td> <td>" + data[i].number + "</td></tr>");
+    }
+    paginateTable(dataTable, 5);
 }
 
 function fillDataTableContent(data) {
-    console.log('mostra');
-    for (let i = 0; i < data.length; i++) {
-        dataTableBody.append("<tr><td>" + data[i].country + "</td> <td style=\"width:14%\">" + data[i].state ? "OK" : "NOK" + "</td> <td>" + values[i].ScoreHome + " - " + values[i].ScoreAway + "</td> <td><span style=\"width:10%;\" class=\"avatar avatar-online\"><img src=\"/resources/imgs/teams/" + values[i].AwayTeamFlag + "\" /></span></td> <td style=\"width:14%\">" + values[i].AwayTeamName + "</td> <td style=\"width:14%\">" + values[i].Date + "</td> <td style=\"width:10%\" class=\"no-users\">" + tip + "</td> <td style=\"width:10%\" class=\"no-users\">" + result + "</td> </tr>");
-    }
+    fillDataTableContentHead();
+    fillDataTableContentBody(data);
 }
 
-function emptyDataTableContent() {
-    dataTableBody.empty;
+function paginateTable(table, limit) {
+    table.DataTable({
+        destroy: true,
+        searching: false,
+        info: false,
+        "retrieve": true,
+        "pageLength": limit,
+        "bLengthChange": false,
+        "bAutoWidth": false
+    });
 }
 
+//requests
 function getPhoneNumbers() {
     $.ajax({
         type: 'post',
@@ -30,14 +47,10 @@ function getPhoneNumbers() {
         url: '/',
         data: ({functionCall: 'indexCustomersPhoneNumbers'}),
         success: function (data) {
-            console.log(data);
-            console.log(JSON.parse(data));
-            emptyDataTableContent();
-            fillDataTableContent(data);
+            fillDataTableContent(JSON.parse(data));
         },
         error: function (data) {
-            console.log('error');
-            console.log(data);
+            console.log(JSON.parse(data));
         }
     });
 }
@@ -50,12 +63,10 @@ function getPhoneNumbersByCountry(country) {
         url: '/',
         data: ({functionCall: 'indexCustomersPhoneNumbersByCountry', country: country}),
         success: function (data) {
-            console.log(data);
-            fillDataTableContent(data);
+            fillDataTableContent(JSON.parse(data));
         },
         error: function (data) {
-            console.log('error');
-            console.log(data);
+            console.log(JSON.parse(data));
         }
     });
 }
@@ -68,16 +79,15 @@ function getPhoneNumbersByState(state) {
         url: '/',
         data: ({functionCall: 'indexCustomersPhoneNumbersByState', state: state}),
         success: function (data) {
-            console.log(JSON.parse(data));
-            fillDataTableContent(data);
+            fillDataTableContent(JSON.parse(data));
         },
         error: function (data) {
-            console.log('error');
-            console.log(data);
+            console.log(JSON.parse(data));
         }
     });
 }
 
+//events
 $('#selectFilterCountry').on('change', function () {
     getPhoneNumbersByCountry(this.value);
 });
@@ -87,7 +97,11 @@ $('#selectFilterState').on('change', function () {
 });
 
 //calls
-//getPhoneNumbers();
+getPhoneNumbers();
+
+//tests
 //getPhoneNumbersByCountry('212');
-getPhoneNumbersByState('1');
+//getPhoneNumbersByState('0');
+
+
 console.log('PhoneNumber.js ready');
