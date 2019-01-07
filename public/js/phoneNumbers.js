@@ -95,10 +95,12 @@ function getPhoneNumbersByState(state) {
 //events
 $('#selectFilterCountry').on('change', function () {
     getPhoneNumbersByCountry(this.value);
+    $('#selectFilterCountry option:eq(0)').prop('selected', true);
 });
 
 $('#selectFilterState').on('change', function () {
     getPhoneNumbersByState(this.value);
+    $('#selectFilterState option:eq(0)').prop('selected', true);
 });
 
 //calls
