@@ -1,6 +1,6 @@
 <?php
 
-namespace REJ;
+namespace classes\phoneNumberHelpers;
 
 class PhoneNumberDetailChecker
 {

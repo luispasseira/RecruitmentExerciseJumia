@@ -31,6 +31,7 @@ function getPhoneNumbers() {
         data: ({functionCall: 'indexCustomersPhoneNumbers'}),
         success: function (data) {
             console.log(data);
+            console.log(JSON.parse(data));
             emptyDataTableContent();
             fillDataTableContent(data);
         },
@@ -47,7 +48,7 @@ function getPhoneNumbersByCountry(country) {
         contentType: 'application/x-www-form-urlencoded; charset=utf-8',
         processData: true,
         url: '/',
-        data: ({functionCall: 'indexCustomersPhoneNumbersByCountry'}),
+        data: ({functionCall: 'indexCustomersPhoneNumbersByCountry', country: country}),
         success: function (data) {
             console.log(data);
             fillDataTableContent(data);
@@ -65,9 +66,9 @@ function getPhoneNumbersByState(state) {
         contentType: 'application/x-www-form-urlencoded; charset=utf-8',
         processData: true,
         url: '/',
-        data: ({functionCall: 'indexCustomersPhoneNumbersByCountry'}),
+        data: ({functionCall: 'indexCustomersPhoneNumbersByState', state: state}),
         success: function (data) {
-            console.log(data);
+            console.log(JSON.parse(data));
             fillDataTableContent(data);
         },
         error: function (data) {
@@ -85,5 +86,7 @@ $('#selectFilterState').on('change', function () {
     getPhoneNumbersByState(this.value);
 });
 
-getPhoneNumbers();
+//getPhoneNumbers();
+//getPhoneNumbersByCountry('212');
+getPhoneNumbersByState('0');
 console.log('PhoneNumber.js ready');

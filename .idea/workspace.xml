@@ -4,15 +4,17 @@
     <list default="true" id="94add088-412e-448c-8bd2-c5d06b2c7767" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/phoneNumbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/phoneNumbers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/phoneNumbers.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/phoneNumbers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/databases/DBSqlLite.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/databases/DBSqlLite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/databases/Database.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/entities/Entity.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/entities/Entity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/entities/EntityCustomer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/entities/EntityCustomer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/entities/EntityCustomerConverter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/entities/EntityCustomerConverter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberDetailChecker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberDetailChecker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberValidator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/EntityCustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/EntityCustomerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaces/IDatabaseBehaviour.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/IDatabaseBehaviour.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/IEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/IEntity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,29 +32,20 @@
       <file leaf-file-name="EntityCustomerController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/EntityCustomerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="379">
+              <caret line="39" column="59" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntityCustomerRepository.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EntityCustomerRepository.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+            <state relative-caret-position="379">
+              <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
               <folding>
-                <element signature="e#32#56#0#PHP" expanded="true" />
+                <element signature="e#32#64#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityCustomerConverter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomerConverter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -60,8 +53,20 @@
       <file leaf-file-name="DBSqlLite.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/classes/databases/DBSqlLite.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1658">
-              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+            <state relative-caret-position="234">
+              <caret line="128" selection-start-line="128" selection-end-line="128" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityCustomer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="38" column="32" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="32" />
+              <folding>
+                <element signature="e#36#93#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,53 +74,11 @@
       <file leaf-file-name="phoneNumbers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/phoneNumbers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+            <state relative-caret-position="484">
+              <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
               <folding>
                 <element signature="n#!!block;n#paginateTable#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/entities/Entity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-131">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityCustomer.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-              <folding>
-                <element signature="e#28#61#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="phoneNumbers.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/phoneNumbers.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-              <folding>
-                <element signature="e#1604#1610#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -132,6 +95,13 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>indexCustomersPhoneNumbers</find>
+      <find>setphonn</find>
+      <find>var_d</find>
+      <find>closeco</find>
+      <find>setIsV</find>
+      <find>phoneCountryCode</find>
+      <find>getPhoneNumberCountryName</find>
+      <find>get</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,26 +115,27 @@
         <option value="$PROJECT_DIR$/src/classes/PhoneNumberDetailChecker.php" />
         <option value="$PROJECT_DIR$/src/classes/EntityCustomer.php" />
         <option value="$PROJECT_DIR$/src/classes/Database.php" />
-        <option value="$PROJECT_DIR$/src/interfaces/IEntity.php" />
         <option value="$PROJECT_DIR$/public/js/plugins/jquery.min.js" />
         <option value="$PROJECT_DIR$/public/views/app.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa6012.49655/refood-site/web/view/js/refood/refood_list.js" />
-        <option value="$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberValidator.php" />
-        <option value="$PROJECT_DIR$/src/classes/entities/EntityCustomerConverter.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/public/phoneNumbers.html" />
         <option value="$PROJECT_DIR$/../index.php" />
+        <option value="$PROJECT_DIR$/src/classes/databases/Database.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/src/classes/entities/Entity.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/interfaces/IEntity.php" />
+        <option value="$PROJECT_DIR$/src/classes/entities/Entity.php" />
         <option value="$PROJECT_DIR$/src/interfaces/IDatabaseBehaviour.php" />
-        <option value="$PROJECT_DIR$/src/controllers/EntityCustomerController.php" />
+        <option value="$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberDetailChecker.php" />
+        <option value="$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberValidator.php" />
+        <option value="$PROJECT_DIR$/src/classes/entities/EntityCustomerConverter.php" />
+        <option value="$PROJECT_DIR$/src/classes/entities/EntityCustomer.php" />
         <option value="$PROJECT_DIR$/public/views/phoneNumbers.html" />
+        <option value="$PROJECT_DIR$/src/classes/databases/DBSqlLite.php" />
+        <option value="$PROJECT_DIR$/src/controllers/EntityCustomerController.php" />
         <option value="$PROJECT_DIR$/public/js/phoneNumbers.js" />
         <option value="$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php" />
-        <option value="$PROJECT_DIR$/src/classes/databases/Database.php" />
-        <option value="$PROJECT_DIR$/src/classes/databases/DBSqlLite.php" />
-        <option value="$PROJECT_DIR$/src/classes/entities/EntityCustomer.php" />
       </list>
     </option>
   </component>
@@ -194,7 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,28 +175,12 @@
             <path>
               <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
               <item name="RecruitmentExerciseJumia" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
               <item name="RecruitmentExerciseJumia" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RecruitmentExerciseJumia" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RecruitmentExerciseJumia" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="pagination" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
@@ -278,16 +232,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="RecruitmentExerciseJumia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RecruitmentExerciseJumia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,7 +288,8 @@
       <workItem from="1546546569070" duration="277000" />
       <workItem from="1546627455404" duration="20702000" />
       <workItem from="1546704110357" duration="11794000" />
-      <workItem from="1546790635445" duration="9486000" />
+      <workItem from="1546790635445" duration="16070000" />
+      <workItem from="1546816392441" duration="3698000" />
     </task>
     <task id="LOCAL-00001" summary="New: Created Database, DBSqlLite classes and IDatabaseBehaviour interface; Entity, EntityCustomer classes and IEntity interface; EntityCustomerController; PhoneNumberDetailChecker and PhoneNumberValidator classes;">
       <created>1546697799363</created>
@@ -369,26 +319,33 @@
       <option name="project" value="LOCAL" />
       <updated>1546795376143</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix: Ajax data fixed; Removed Database class; Fixed entry point bug; Composer with namespaces">
+      <created>1546807232308</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1546807232308</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42259000" />
+    <option name="totallyTimeSpent" value="52541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.262945" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32935917" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32935917" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3287037" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.23695976" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2361111" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -411,7 +368,8 @@
     <MESSAGE value="New: Added js files; EntityCustomerConverter; Fix: Connection to database moved to DBSqlLite class;" />
     <MESSAGE value="Fix: Filter functions half correct; Oops: JS file with errors while doing ajax" />
     <MESSAGE value="Fix: Ajax url fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: Ajax url fixed." />
+    <MESSAGE value="Fix: Ajax data fixed; Removed Database class; Fixed entry point bug; Composer with namespaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: Ajax data fixed; Removed Database class; Fixed entry point bug; Composer with namespaces" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -419,6 +377,74 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/classes/databases/DBSqlLite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interfaces/IDatabaseBehaviour.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomerConverter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="e#126#182#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="e#36#93#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/entities/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/phoneNumbers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!block;n#paginateTable#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/phoneNumbers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+          <folding>
+            <element signature="e#1579#1585#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/EntityCustomerController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -454,38 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -508,36 +502,7 @@
         <state relative-caret-position="34">
           <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding>
-            <element signature="e#262#305#0#PHP" />
-            <element signature="e#311#350#0#PHP" />
-            <element signature="e#355#455#0#PHP" />
-            <element signature="e#461#500#0#PHP" />
-            <element signature="e#505#621#0#PHP" />
-            <element signature="e#627#676#0#PHP" />
-            <element signature="e#681#806#0#PHP" />
-            <element signature="e#812#861#0#PHP" />
-            <element signature="e#866#991#0#PHP" />
-            <element signature="e#997#1038#0#PHP" />
-            <element signature="e#1044#1087#0#PHP" />
-            <element signature="e#1093#1126#0#PHP" />
-            <element signature="e#1131#1218#0#PHP" />
-            <element signature="e#1224#1265#0#PHP" />
-            <element signature="e#1271#1327#0#PHP" />
-            <element signature="e#1333#1366#0#PHP" />
-            <element signature="e#1371#1455#0#PHP" />
-            <element signature="e#1461#1493#0#PHP" />
-            <element signature="e#1498#1649#0#PHP" />
-            <element signature="e#1566#1642#0#PHP" />
-            <element signature="e#1572#1641#1#PHP" />
-            <element signature="e#1655#1709#0#PHP" />
-            <element signature="e#1715#1770#0#PHP" />
-            <element signature="e#1776#1826#0#PHP" />
-            <element signature="e#1831#1994#0#PHP" />
-            <element signature="e#2000#2048#0#PHP" />
-            <element signature="e#2053#2220#0#PHP" />
-            <element signature="e#2226#2274#0#PHP" />
-            <element signature="e#2279#2446#0#PHP" />
-            <element signature="e#2452#2505#0#PHP" />
+            <element signature="e#36#93#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -549,13 +514,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/databases/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/databases/Database.php" />
     <entry file="file://$PROJECT_DIR$/public/js/phoneNumbers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -563,16 +522,6 @@
           <folding>
             <element signature="n#!!block;n#paginateTable#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/IEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -592,11 +541,7 @@
     <entry file="file://$PROJECT_DIR$/public/js/plugins/pagination/data-tables.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa6012.47140/address.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1417" />
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa6012.47140/address.js" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6012.49655/refood-site/web/view/js/refood/refood_list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -617,27 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <element signature="e#56#115#0#PHP" />
-            <element signature="e#120#268#0#PHP" />
-            <element signature="e#274#333#0#PHP" />
-            <element signature="e#338#484#0#PHP" />
-            <element signature="e#490#549#0#PHP" />
-            <element signature="e#554#698#0#PHP" />
-            <element signature="e#704#763#0#PHP" />
-            <element signature="e#768#916#0#PHP" />
-            <element signature="e#922#981#0#PHP" />
-            <element signature="e#986#1124#0#PHP" />
-            <element signature="e#1130#1317#0#PHP" />
-            <element signature="e#1322#1863#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php" />
     <entry file="file://$USER_HOME$/Desktop/Teste/src/BD.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -650,38 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,51 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#49#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_namespaces.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_psr4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberDetailChecker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/IDatabaseBehaviour.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -751,77 +598,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/phoneNumbers.html">
+    <entry file="file://$PROJECT_DIR$/src/classes/databases/Database.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_namespaces.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="e#1604#1610#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/EntityCustomerController.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_psr4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interfaces/IEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/entities/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interfaces/IDatabaseBehaviour.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberDetailChecker.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        <state relative-caret-position="34">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/phoneNumberHelpers/PhoneNumberValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
           <folding>
-            <element signature="e#32#56#0#PHP" expanded="true" />
+            <element signature="e#56#115#0#PHP" />
+            <element signature="e#120#268#0#PHP" />
+            <element signature="e#274#333#0#PHP" />
+            <element signature="e#338#484#0#PHP" />
+            <element signature="e#490#549#0#PHP" />
+            <element signature="e#554#698#0#PHP" />
+            <element signature="e#704#763#0#PHP" />
+            <element signature="e#768#916#0#PHP" />
+            <element signature="e#922#981#0#PHP" />
+            <element signature="e#986#1124#0#PHP" />
+            <element signature="e#1130#1317#0#PHP" />
+            <element signature="e#1322#1863#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomerConverter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="357">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="e#126#182#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/databases/Database.php">
+    <entry file="file://$PROJECT_DIR$/src/controllers/EntityCustomerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="379">
+          <caret line="39" column="59" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/databases/DBSqlLite.php">
+    <entry file="file://$PROJECT_DIR$/public/views/phoneNumbers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1658">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        <state relative-caret-position="11">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#1579#1585#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="e#36#93#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/phoneNumbers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+        <state relative-caret-position="484">
+          <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
           <folding>
             <element signature="n#!!block;n#paginateTable#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/entities/Entity.php">
+    <entry file="file://$PROJECT_DIR$/src/classes/databases/DBSqlLite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="234">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/classes/entities/EntityCustomer.php">
+    <entry file="file://$PROJECT_DIR$/src/repositories/EntityCustomerRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="379">
+          <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
           <folding>
-            <element signature="e#28#61#0#PHP" expanded="true" />
+            <element signature="e#32#64#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

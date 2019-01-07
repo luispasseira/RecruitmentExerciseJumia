@@ -1,10 +1,7 @@
 {
   "autoload": {
     "psr-4": {
-      "databases\\": "src/classes/databases",
-      "repositories\\": "src/classes/repositories",
-      "entities\\": "src/classes/entities",
-      "REJ\\": "src/"
+      "": "src/"
     }
   }
 }

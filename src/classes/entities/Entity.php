@@ -6,10 +6,10 @@
  * Time: 8:05 PM
  */
 
-namespace entities;
+namespace classes\entities;
+use interfaces\IEntity;
 
-
-class Entity implements \IEntity
+class Entity implements IEntity
 {
     protected $id;
 

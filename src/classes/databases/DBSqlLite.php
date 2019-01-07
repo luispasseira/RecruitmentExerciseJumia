@@ -1,12 +1,14 @@
 <?php
 
-namespace databases;
+namespace classes\databases;
 
 use entities\Entity;
+use interfaces\IDatabaseBehaviour;
+use interfaces\IEntity;
 
-class DBSqlLite implements \IDatabaseBehaviour
+class DBSqlLite implements IDatabaseBehaviour
 {
-    protected $connectionPath = "C:\wamp64\www\RecruitmentExerciseJumia\database\\";
+    protected $connectionPath = "sqlite:C:/wamp64/www/RecruitmentExerciseJumia/database/sample.db";
     protected $connection;
 
     /**
@@ -48,7 +50,7 @@ class DBSqlLite implements \IDatabaseBehaviour
     /**
      * @return \PDO
      */
-    public function getConnection(): \PDO
+    public function getConnection(): ?\PDO
     {
         return $this->connection;
     }
@@ -66,32 +68,32 @@ class DBSqlLite implements \IDatabaseBehaviour
      */
     public function openConnection(): bool
     {
-        $isConnected = false;
-
         try {
-            $this->setConnection(new \PDO($this->getConnectionPath()));
+            if (is_null($this->getConnection())) {
+                $this->setConnection(new \PDO($this->getConnectionPath()));
+            }
             $isConnected = true;
         } catch (\Exception $ex) {
-            return $isConnected;
+            $isConnected = false;
         }
         return $isConnected;
     }
 
     /**
-     * @return bool
+     *
      */
-    public function closeConnection(): bool
+    public function closeConnection(): void
     {
-        return $this->connection = null;
+        $this->connection = null;
     }
 
     /**
-     * @param \IEntity $entity
+     * @param IEntity $entity
      * @return array
      */
-    public function getAll(\IEntity $entity): array
+    public function getAll(IEntity $entity): array
     {
-        $result = array(['Failed to load...']);
+        $result = ['Failed to load...'];
         if ($this->openConnection()) {
             $result = $this->executeQuery("SELECT * FROM " . $entity->getTableName());
             $this->closeConnection();
@@ -101,15 +103,15 @@ class DBSqlLite implements \IDatabaseBehaviour
     }
 
     /**
-     * @param Entity $entity
+     * @param IEntity $entity
      * @param array $fields
      * @return array
      */
-    public function getAllByFields(\IEntity $entity, array $fields): array
+    public function getAllByFields(IEntity $entity, array $fields): array
     {
-        $result = array(['Failed to load...']);
+        $result = ['Failed to load...'];
         if ($this->openConnection()) {
-            $result = $this->executeQuery("SELECT " . $this->getStringFromArray($fields) . " FROM " . $entity->getTableName());
+            $result = $this->executeQuery("SELECT " . implode($fields, ', ') . " FROM " . $entity->getTableName());
             $this->closeConnection();
         }
 
@@ -117,27 +119,21 @@ class DBSqlLite implements \IDatabaseBehaviour
     }
 
     /**
-     ******* END INHERITED METHODS *******
+     * @param IEntity $entity
+     * @param array $fields
+     * @param string $countryCode
+     * @return array
      */
-
-    /**
-     ******* BEGIN SPECIFIC METHODS *******
-     */
-
-    /**
-     * @param array $arr
-     * @return string
-     */
-    private function getStringFromArray(array $arr): string
+    public function getAllByCountryCode(IEntity $entity, array $fields, string $countryCode): array
     {
-        $returnString = "";
-        for ($i = 0; $i < sizeof($arr); $i++) {
-            if ($arr[$i] != sizeof($arr))
-                $returnString .= $arr[$i] . ", ";
-            else
-                $returnString .= $arr[$i];
+
+        $result = ['Failed to load...'];
+        if ($this->openConnection()) {
+            $result = $this->executeQuery("SELECT " . implode($fields, ', ') . " FROM " . $entity->getTableName() . " WHERE phone LIKE '(" . $countryCode . ")%'");
+            $this->closeConnection();
         }
-        return $returnString;
+
+        return $result;
     }
 
     /**
@@ -146,11 +142,18 @@ class DBSqlLite implements \IDatabaseBehaviour
      */
     private function executeQuery(string $query): array
     {
-        $result = $this->getConnection()->query($query);
-        if (!$result)
-            return (array)$result;
-        else
-            return array(['Failed to load...']);
+        $customers = [];
+        $stmt = $this->getConnection()->query($query);
+
+        while ($row = $stmt->fetch()) {
+            $customers[] = $row;
+        }
+
+        if ($customers)
+            return $customers;
+        else {
+            return [];
+        }
     }
 
     /**

@@ -2,9 +2,9 @@
 
 namespace repositories;
 
-use databases\DBSqlLite;
-use entities\EntityCustomer;
-use REJ\EntityCustomerConverter;
+use classes\databases\DBSqlLite;
+use classes\entities\EntityCustomer;
+use classes\entities\EntityCustomerConverter;
 
 
 class EntityCustomerRepository
@@ -12,28 +12,38 @@ class EntityCustomerRepository
     public static function findAllPhoneNumbers(): array
     {
         $dbConnection = new DBSqlLite();
-        $queryResult = $dbConnection->getAllByFields(new EntityCustomer(), array(['phone']));
+        //query returns an array of arrays
+        $queryResult = $dbConnection->getAllByFields(new EntityCustomer(), ['phone']);
 
         return EntityCustomerConverter::convertArrayStringIntoCustomersPhoneNumbers($queryResult);
     }
 
-    public static function findAllPhoneNumbersByCountry(string $country): array
+    public static function findAllPhoneNumbersByCountry(string $countryCode): array
     {
-        $connectionPath = "C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\database";
-        $dbConnection = DBSqlLite::withConnectionPath($connectionPath);
-
-        $queryResult = $dbConnection->getAllByFields(new EntityCustomer(), array(['phone']));
+        $dbConnection = new DBSqlLite();
+        $queryResult = $dbConnection->getAllByCountryCode(new EntityCustomer(), ['phone'], $countryCode);
 
         return EntityCustomerConverter::convertArrayStringIntoCustomersPhoneNumbers($queryResult);
+
     }
 
     public static function findAllPhoneNumbersByState(string $state): array
     {
-        $connectionPath = "C:\Users\LuisPasseira\Desktop\RecruitmentExerciseJumia\database";
-        $dbConnection = DBSqlLite::withConnectionPath($connectionPath);
+        $dbConnection = new DBSqlLite();
+        $queryResult = $dbConnection->getAllByFields(new EntityCustomer(), ['phone']);
 
-        $queryResult = $dbConnection->getAllByFields(new Entity(), array(['phone']));
+        //construct EntityCustomers
+        $entityCustomerArrayResult = EntityCustomerConverter::convertArrayStringIntoCustomersPhoneNumbers($queryResult);
 
-        return EntityCustomerConverter::convertArrayStringIntoCustomersPhoneNumbers($queryResult);
+        $resultWithCountry = array();
+
+        //filter which EntityCustomer has PhoneNumber from given state
+        foreach ($entityCustomerArrayResult as $entityCustomer) {
+            if ($entityCustomer->isValidPhoneNumber() == (bool)$state) {
+                array_push($resultWithCountry, $entityCustomer);
+            }
+        }
+
+        return $resultWithCountry;
     }
 }

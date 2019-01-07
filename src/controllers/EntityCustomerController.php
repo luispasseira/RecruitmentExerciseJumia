@@ -2,40 +2,46 @@
 
 use repositories\EntityCustomerRepository;
 
+
 function indexCustomersPhoneNumbers(): void
 {
     try {
         $response = EntityCustomerRepository::findAllPhoneNumbers();
+
     } catch (\Exception $exception) {
         $response = ['message' => $exception->getMessage()];
     }
+
+    echo json_encode($response);
+}
+
+
+/**
+ * @param string $country
+ */
+function indexCustomersPhoneNumbersByCountry(string $country): void
+{
+    try {
+        $response = EntityCustomerRepository::findAllPhoneNumbersByCountry($country);
+
+    } catch (\Exception $exception) {
+        $response = ['message' => $exception->getMessage()];
+    }
+
     echo json_encode($response);
 }
 
 /**
- * @param string $country
- * @return string
- */
-function indexCustomersPhoneNumbersByCountry(string $country): string
-{
-    try {
-        $response = json_encode(EntityCustomerRepository::findAllPhoneNumbers());
-    } catch (\Exception $exception) {
-        $response = $exception->getMessage();
-    }
-    return $response;
-}
-
-/**
  * @param string $state
- * @return string
  */
-function indexCustomersPhoneNumbersByState(string $state): string
+function indexCustomersPhoneNumbersByState(string $state): void
 {
     try {
-        $response = json_encode(EntityCustomerRepository::findAllPhoneNumbers());
+        $response = EntityCustomerRepository::findAllPhoneNumbersByState($state);
+
     } catch (\Exception $exception) {
-        $response = $exception->getMessage();
+        $response = ['message' => $exception->getMessage()];
     }
-    return $response;
+
+    echo json_encode($response);
 }

@@ -1,17 +1,41 @@
 <?php
 
-namespace entities;
+namespace classes\entities;
 
-use REJ\PhoneNumberDetailChecker;
-use REJ\PhoneNumberValidator;
+use classes\phoneNumberHelpers\PhoneNumberDetailChecker;
+use classes\phoneNumberHelpers\PhoneNumberValidator;
 
-class EntityCustomer extends Entity
+
+class EntityCustomer extends Entity implements \JsonSerializable
 {
+    /**
+     * @var int
+     */
     protected $id;
+
+    /**
+     * @var string
+     */
     private $name; //Just to be consistent. Never used.
+
+    /**
+     * @var string
+     */
     private $phoneNumber;
+
+    /**
+     * @var string
+     */
     private $phoneCountryName;
+
+    /**
+     * @var string
+     */
     private $phoneCountryCode;
+
+    /**
+     * @var bool
+     */
     private $isValidPhoneNumber;
 
     /**
@@ -23,7 +47,8 @@ class EntityCustomer extends Entity
      */
     public function setPhoneNumber(string $phone): void
     {
-        $this->phoneNumber = $phone;
+        //removes the (xxx) from the phone number.
+        $this->phoneNumber =  substr($phone, 6);
     }
 
     /**
@@ -64,6 +89,30 @@ class EntityCustomer extends Entity
     public function getPhoneNumber(): string
     {
         return $this->phoneNumber;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPhoneCountryName(): string
+    {
+        return $this->phoneCountryName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPhoneCountryCode(): string
+    {
+        return $this->phoneCountryCode;
+    }
+
+    /**
+     * @return string
+     */
+    public function isValidPhoneNumber(): bool
+    {
+        return $this->isValidPhoneNumber;
     }
 
     /**
@@ -129,4 +178,20 @@ class EntityCustomer extends Entity
     /**
      ******* END SPECIFIC METHODS *******
      */
+    /**
+     * Specify data which should be serialized to JSON
+     * @link http://php.net/manual/en/jsonserializable.jsonserialize.php
+     * @return mixed data which can be serialized by <b>json_encode</b>,
+     * which is a value of any type other than a resource.
+     * @since 5.4.0
+     */
+    public function jsonSerialize()
+    {
+       return [
+         'country' => $this->getPhoneCountryName(),
+         'state' => $this->isValidPhoneNumber() ? 1 : 0,
+         'country_code' => $this->getPhoneCountryCode(),
+         'number' => $this->getPhoneNumber()
+       ];
+    }
 }

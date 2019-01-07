@@ -1,25 +1,27 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: LuisPasseira
- * Date: 1/5/2019
- * Time: 5:09 PM
- */
+namespace classes\entities;
 
-namespace REJ;
-
+use classes\phoneNumberHelpers\PhoneNumberDetailChecker;
+use classes\phoneNumberHelpers\PhoneNumberValidator;
 
 class EntityCustomerConverter
 {
-    public static function convertArrayStringIntoCustomersPhoneNumbers(array $arrayString): array
+    /**
+     * @param array $resultArray
+     * @return array
+     * converts given array of PhoneNumbers into EntityCustomers phone numbers and
+     * gets its country, country code and checks if its valid or not
+     */
+    public static function convertArrayStringIntoCustomersPhoneNumbers(array $resultArray): array
     {
-        $arrayCustomers = array();
-        foreach ($arrayString as $singleString) {
+        $arrayCustomers = [];
+        foreach ($resultArray as $singleArray) {
             $customer = new EntityCustomer();
-            $customer->setPhoneNumber($singleString);
-            $customer->setIsValidPhoneNumber(PhoneNumberValidator::isValidPhoneNumber($singleString));
-            $customer->setPhoneCountryName(PhoneNumberDetailChecker::getCountryName($singleString));
-            $customer->setPhoneCountryCode(PhoneNumberDetailChecker::getCountryCode($singleString));
+            //$singleArray[0] is the phone number.
+            $customer->setPhoneNumber($singleArray[0]);
+            $customer->setIsValidPhoneNumber(PhoneNumberValidator::isValidPhoneNumber($singleArray[0]));
+            $customer->setPhoneCountryName(PhoneNumberDetailChecker::getCountryName($singleArray[0]));
+            $customer->setPhoneCountryCode(PhoneNumberDetailChecker::getCountryCode($singleArray[0]));
             array_push($arrayCustomers, $customer);
         }
 
