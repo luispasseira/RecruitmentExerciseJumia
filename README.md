@@ -38,6 +38,7 @@ $ vendor/bin/phpunit tests/
 
 As I didn't use any development framework I had to adopt an organized, clear and coherent folder structure, and it goes as follows:
 
+```bash
 .
 ├── composer.json
 ├── composer.lock
@@ -90,7 +91,7 @@ As I didn't use any development framework I had to adopt an organized, clear and
 │   │       └── PhoneNumberValidatorTest.php
 │   └── converter
 │       └── EntityCustomerConverterTest.php
-
+```
 ---
 
 #### Run application
