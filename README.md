@@ -38,7 +38,59 @@ $ vendor/bin/phpunit tests/
 
 As I didn't use any development framework I had to adopt an organized, clear and coherent folder structure, and it goes as follows:
 
-Coming soon...
+.
+├── composer.json
+├── composer.lock
+├── database
+│   └── sample.db
+├── public
+│   ├── css
+│   │   ├── app.css
+│   │   ├── pagination.css
+│   │   └── plugins
+│   │       ├── bootstrap.css
+│   │       └── pagination
+│   │           └── data-table.css
+│   ├── icon
+│   │   └── Jumia.png
+│   ├── index.php
+│   ├── js
+│   │   ├── phoneNumbers.js
+│   │   ├── plugins
+│   │   │   ├── jquery
+│   │   │   │   └── jquery.min.js
+│   │   │   └── pagination
+│   │   │       ├── data-table-options.js
+│   │   │       └── data-tables.js
+│   │   └── tableActions.js
+│   └── views
+│       └── phoneNumbers.html
+├── src
+│   ├── classes
+│   │   ├── databases
+│   │   │   └── DBSqlLite.php
+│   │   ├── entities
+│   │   │   ├── EntityCustomerConverter.php
+│   │   │   ├── EntityCustomer.php
+│   │   │   └── Entity.php
+│   │   └── phoneNumberHelpers
+│   │       ├── PhoneNumberDetailChecker.php
+│   │       └── PhoneNumberValidator.php
+│   ├── controllers
+│   │   └── EntityCustomerController.php
+│   ├── interfaces
+│   │   ├── IDatabaseBehaviour.php
+│   │   └── IEntity.php
+│   └── repositories
+│       └── EntityCustomerRepository.php
+├── tests
+│   ├── classes
+│   │   └── phoneNumberHelpers
+│   │       ├── PhoneNumberDetailCheckerTest.php
+│   │       └── PhoneNumberValidatorTest.php
+│   └── converter
+│       └── EntityCustomerConverterTest.php
+
 ---
 
 #### Run application
