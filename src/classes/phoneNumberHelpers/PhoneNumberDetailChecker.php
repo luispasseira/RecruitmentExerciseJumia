@@ -8,7 +8,7 @@ class PhoneNumberDetailChecker
      * @param string $phone
      * @return bool
      */
-    private static function isCameroonPhoneNumber(string $phone): bool
+    public static function isCameroonPhoneNumber(string $phone): bool
     {
         return substr($phone, 0, 5) == "(237)";
     }
@@ -17,7 +17,7 @@ class PhoneNumberDetailChecker
      * @param string $phone
      * @return bool
      */
-    private static function isEthiopiaPhoneNumber(string $phone): bool
+    public static function isEthiopiaPhoneNumber(string $phone): bool
     {
         return substr($phone, 0, 5) == "(251)";
     }
@@ -26,7 +26,7 @@ class PhoneNumberDetailChecker
      * @param string $phone
      * @return bool
      */
-    private static function isMoroccoPhoneNumber(string $phone): bool
+    public static function isMoroccoPhoneNumber(string $phone): bool
     {
         return substr($phone, 0, 5) == "(212)";
     }
@@ -35,7 +35,7 @@ class PhoneNumberDetailChecker
      * @param string $phone
      * @return bool
      */
-    private static function isMozambiquePhoneNumber(string $phone): bool
+    public static function isMozambiquePhoneNumber(string $phone): bool
     {
         return substr($phone, 0, 5) == "(258)";
     }
@@ -44,7 +44,7 @@ class PhoneNumberDetailChecker
      * @param string $phone
      * @return bool
      */
-    private static function isUgandaPhoneNumber(string $phone): bool
+    public static function isUgandaPhoneNumber(string $phone): bool
     {
         return substr($phone, 0, 5) == "(256)";
     }
