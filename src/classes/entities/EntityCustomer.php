@@ -45,7 +45,7 @@ class EntityCustomer extends Entity implements \JsonSerializable
     /**
      * @param string $phone
      */
-    public function setPhoneNumber(string $phone): void
+    public function setPhoneNumber(string $phone)
     {
         //removes the (xxx) from the phone number.
         $this->phoneNumber =  substr($phone, 6);
@@ -54,7 +54,7 @@ class EntityCustomer extends Entity implements \JsonSerializable
     /**
      * @param bool $isValid
      */
-    public function setIsValidPhoneNumber(bool $isValid): void
+    public function setIsValidPhoneNumber(bool $isValid)
     {
         $this->isValidPhoneNumber = $isValid;
     }
@@ -62,7 +62,7 @@ class EntityCustomer extends Entity implements \JsonSerializable
     /**
      * @param mixed $phoneCountryName
      */
-    public function setPhoneCountryName($phoneCountryName): void
+    public function setPhoneCountryName($phoneCountryName)
     {
         $this->phoneCountryName = $phoneCountryName;
     }
@@ -70,7 +70,7 @@ class EntityCustomer extends Entity implements \JsonSerializable
     /**
      * @param mixed $phoneCountryCode
      */
-    public function setPhoneCountryCode($phoneCountryCode): void
+    public function setPhoneCountryCode($phoneCountryCode)
     {
         $this->phoneCountryCode = $phoneCountryCode;
     }
@@ -154,25 +154,9 @@ class EntityCustomer extends Entity implements \JsonSerializable
     /**
      * Sets $isValidPhoneNumber value.
      */
-    public function assignPhoneNumberState(): void
+    public function assignPhoneNumberState()
     {
         $this->setIsValidPhoneNumber(PhoneNumberValidator::isValidPhoneNumber($this->getPhoneNumber()));
-    }
-
-    /**
-     * Sets $phoneCountryName value.
-     */
-    public function assignPhoneNumberCountryName(): void
-    {
-        $this->setPhoneCountryName(PhoneNumberDetailChecker::getCountryName($this->getPhoneNumber()));
-    }
-
-    /**
-     * Sets $phoneCountryCode value.
-     */
-    public function assignPhoneNumberCountryCode(): void
-    {
-        $this->setPhoneCountryCode(PhoneNumberDetailChecker::getCountryCode($this->getPhoneNumber()));
     }
 
     /**

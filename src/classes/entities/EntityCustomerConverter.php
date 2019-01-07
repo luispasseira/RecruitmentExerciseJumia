@@ -16,15 +16,25 @@ class EntityCustomerConverter
     {
         $arrayCustomers = [];
         foreach ($resultArray as $singleArray) {
-            $customer = new EntityCustomer();
-            //$singleArray[0] is the phone number.
-            $customer->setPhoneNumber($singleArray[0]);
-            $customer->setIsValidPhoneNumber(PhoneNumberValidator::isValidPhoneNumber($singleArray[0]));
-            $customer->setPhoneCountryName(PhoneNumberDetailChecker::getCountryName($singleArray[0]));
-            $customer->setPhoneCountryCode(PhoneNumberDetailChecker::getCountryCode($singleArray[0]));
-            array_push($arrayCustomers, $customer);
+            $arrayCustomers[] = self::convertArrayStringIntoCustomerPhoneNumber($singleArray);
         }
 
         return $arrayCustomers;
+    }
+
+
+    /**
+     * @param array $arrayCustomerPhoneNumber
+     * @return EntityCustomer
+     */
+    public static function convertArrayStringIntoCustomerPhoneNumber (array $arrayCustomerPhoneNumber) {
+        $customer = new EntityCustomer();
+
+        //$singleArray[0] is the phone number.
+        $customer->setPhoneNumber($arrayCustomerPhoneNumber['phone']);
+        $customer->setIsValidPhoneNumber(PhoneNumberValidator::isValidPhoneNumber($arrayCustomerPhoneNumber['phone']));
+        $customer->setPhoneCountryName(PhoneNumberDetailChecker::getCountryName($arrayCustomerPhoneNumber['phone']));
+        $customer->setPhoneCountryCode(PhoneNumberDetailChecker::getCountryCode($arrayCustomerPhoneNumber['phone']));
+        return $customer;
     }
 }

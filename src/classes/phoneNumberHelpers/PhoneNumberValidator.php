@@ -8,7 +8,7 @@ class PhoneNumberValidator
      * @param string $phone
      * @return bool
      */
-    private static function isValidCameroonPhoneNumber(string $phone): bool
+    public static function isValidCameroonPhoneNumber(string $phone): bool
     {
         return preg_match('/\(237\)\ ?[2368]\d{7,8}$/', $phone);
     }
@@ -17,7 +17,7 @@ class PhoneNumberValidator
      * @param string $phone
      * @return bool
      */
-    private static function isValidEthiopiaPhoneNumber(string $phone): bool
+    public static function isValidEthiopiaPhoneNumber(string $phone): bool
     {
         return preg_match('/\(251\)\ ?[1-59]\d{8}$/', $phone);
     }
@@ -26,7 +26,7 @@ class PhoneNumberValidator
      * @param string $phone
      * @return bool
      */
-    private static function isValidMoroccoPhoneNumber(string $phone): bool
+    public static function isValidMoroccoPhoneNumber(string $phone): bool
     {
         return preg_match('/\(212\)\ ?[5-9]\d{8}$/', $phone);
     }
@@ -35,7 +35,7 @@ class PhoneNumberValidator
      * @param string $phone
      * @return bool
      */
-    private static function isValidMozambiquePhoneNumber(string $phone): bool
+    public static function isValidMozambiquePhoneNumber(string $phone): bool
     {
         return preg_match('/\(258\)\ ?[28]\d{7,8}$/', $phone);
     }
@@ -44,7 +44,7 @@ class PhoneNumberValidator
      * @param string $phone
      * @return bool
      */
-    private static function isValidUgandaPhoneNumber(string $phone): bool
+    public static function isValidUgandaPhoneNumber(string $phone): bool
     {
         return preg_match('/\(256\)\ ?\d{9}$/', $phone);
     }
