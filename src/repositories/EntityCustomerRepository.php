@@ -29,20 +29,25 @@ class EntityCustomerRepository
 
     public static function findAllPhoneNumbersByState(string $state): array
     {
-        $dbConnection = new DBSqlLite();
-        $queryResult = $dbConnection->getAllByFields(new EntityCustomer(), ['phone']);
+        if ($state != "all") {
+            $dbConnection = new DBSqlLite();
+            $queryResult = $dbConnection->getAllByFields(new EntityCustomer(), ['phone']);
 
-        //construct EntityCustomers
-        $entityCustomerArrayResult = EntityCustomerConverter::convertArrayStringIntoCustomersPhoneNumbers($queryResult);
+            //construct EntityCustomers
+            $entityCustomerArrayResult = EntityCustomerConverter::convertArrayStringIntoCustomersPhoneNumbers($queryResult);
 
-        $resultWithCountry = array();
+            $resultWithCountry = array();
 
-        //filter which EntityCustomer has PhoneNumber from given state
-        foreach ($entityCustomerArrayResult as $entityCustomer) {
-            if ($entityCustomer->isValidPhoneNumber() == (bool)$state) {
-                array_push($resultWithCountry, $entityCustomer);
+            //filter which EntityCustomer has PhoneNumber from given state
+            foreach ($entityCustomerArrayResult as $entityCustomer) {
+                if ($entityCustomer->isValidPhoneNumber() == (bool)$state) {
+                    array_push($resultWithCountry, $entityCustomer);
+                }
             }
+        } else {
+            $resultWithCountry = EntityCustomerRepository::findAllPhoneNumbers();
         }
+
 
         return $resultWithCountry;
     }

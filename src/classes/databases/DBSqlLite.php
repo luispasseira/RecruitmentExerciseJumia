@@ -126,11 +126,14 @@ class DBSqlLite implements IDatabaseBehaviour
      */
     public function getAllByCountryCode(IEntity $entity, array $fields, string $countryCode): array
     {
-
         $result = ['Failed to load...'];
-        if ($this->openConnection()) {
-            $result = $this->executeQuery("SELECT " . implode($fields, ', ') . " FROM " . $entity->getTableName() . " WHERE phone LIKE '(" . $countryCode . ")%'");
-            $this->closeConnection();
+        if ($countryCode != "all") {
+            if ($this->openConnection()) {
+                $result = $this->executeQuery("SELECT " . implode($fields, ', ') . " FROM " . $entity->getTableName() . " WHERE phone LIKE '(" . $countryCode . ")%'");
+                $this->closeConnection();
+            }
+        } else {
+            $result = $this->getAllByFields($entity, $fields);
         }
 
         return $result;

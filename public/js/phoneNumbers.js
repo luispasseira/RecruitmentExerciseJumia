@@ -4,10 +4,6 @@ const dataTableHead = $('#tablePhoneNumbersHead');
 const dataTableBody = $('#tablePhoneNumbersBody');
 
 //functions
-function emptyTableContent(table) {
-    table.empty();
-}
-
 function fillDataTableContentHead() {
     emptyTableContent(dataTableHead);
     dataTableHead.append("<tr><th scope=\"col\">Country</th>\<th scope=\"col\">State</th><th scope=\"col\">Country code</th><th scope=\"col\">Phone num.</th></tr>");
@@ -31,11 +27,17 @@ function paginateTable(table, limit) {
         destroy: true,
         searching: false,
         info: false,
-        "retrieve": true,
+        stateSave: false,
         "pageLength": limit,
         "bLengthChange": false,
         "bAutoWidth": false
     });
+}
+
+function reinitializeTablePagination(table) {
+    if ($.fn.DataTable.isDataTable(table)) {
+        table.DataTable().destroy();
+    }
 }
 
 //requests
@@ -47,6 +49,7 @@ function getPhoneNumbers() {
         url: '/',
         data: ({functionCall: 'indexCustomersPhoneNumbers'}),
         success: function (data) {
+            reinitializeTablePagination(dataTable);
             fillDataTableContent(JSON.parse(data));
         },
         error: function (data) {
@@ -63,6 +66,7 @@ function getPhoneNumbersByCountry(country) {
         url: '/',
         data: ({functionCall: 'indexCustomersPhoneNumbersByCountry', country: country}),
         success: function (data) {
+            reinitializeTablePagination(dataTable);
             fillDataTableContent(JSON.parse(data));
         },
         error: function (data) {
@@ -79,6 +83,7 @@ function getPhoneNumbersByState(state) {
         url: '/',
         data: ({functionCall: 'indexCustomersPhoneNumbersByState', state: state}),
         success: function (data) {
+            reinitializeTablePagination(dataTable);
             fillDataTableContent(JSON.parse(data));
         },
         error: function (data) {
