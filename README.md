@@ -44,48 +44,7 @@ $ vendor/bin/phpunit tests/
 
 As I didn't use any development framework I had to adopt an organized, clear and coherent folder structure, and it goes as follows:
 
-.
-├── composer.json
-├── composer.lock
-├── database
-│   └── sample.db
-├── public
-│   ├── css
-│   ├── icon
-│   ├── index.php
-│   ├── js
-│   │   ├── phoneNumbers.
-│   │   ├── phableActions.js
-│   │   ├── plugins
-│   │   │   ├── jquery
-│   │   │   └── pagination
-│   └── views
-├── src
-│   ├── classes
-│   │   ├── databases
-│   │   │   └── DBSqlLite.php
-│   │   ├── entities
-│   │   │   ├── EntityCustomerConverter.php
-│   │   │   ├── EntityCustomer.php
-│   │   │   └── Entity.php
-│   │   └── phoneNumberHelpers
-│   │   │   └── PhoneNumberDetailChecker.php
-│   │   │   └── PhoneNumberValidator.php
-│   ├── controllers
-│   │   └── EntityCustomerController.php
-│   ├── interfaces
-│   │   ├── IDatabaseBehaviour.php
-│   │   └── IEntity.php
-│   └── repositories
-│   │   │   └── EntityCustomerRepository.php
-├── tests
-│   ├── classes
-│   │   └── phoneNumberHelpers
-│   │   │   └── PhoneNumberDetailCheckerTest.php
-│   │   │   └── PhoneNumberValidatorTest.php
-│   └── converter
-│   │   │   └── EntityCustomerConverterTest.php
-
+Coming soon...
 ---
 
 #### Run application
