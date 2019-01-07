@@ -7,6 +7,7 @@ class PhoneNumberDetailChecker
     /**
      * @param string $phone
      * @return bool
+     * checks if given phone is from Cameroon
      */
     public static function isCameroonPhoneNumber(string $phone): bool
     {
@@ -16,6 +17,7 @@ class PhoneNumberDetailChecker
     /**
      * @param string $phone
      * @return bool
+     * checks if given phone is from Ethiopia
      */
     public static function isEthiopiaPhoneNumber(string $phone): bool
     {
@@ -25,6 +27,7 @@ class PhoneNumberDetailChecker
     /**
      * @param string $phone
      * @return bool
+     * checks if given phone is from Morocco
      */
     public static function isMoroccoPhoneNumber(string $phone): bool
     {
@@ -34,6 +37,7 @@ class PhoneNumberDetailChecker
     /**
      * @param string $phone
      * @return bool
+     * checks if given phone is from Mozambique
      */
     public static function isMozambiquePhoneNumber(string $phone): bool
     {
@@ -43,6 +47,7 @@ class PhoneNumberDetailChecker
     /**
      * @param string $phone
      * @return bool
+     * checks if given phone is from Uganda
      */
     public static function isUgandaPhoneNumber(string $phone): bool
     {
@@ -52,6 +57,7 @@ class PhoneNumberDetailChecker
     /**
      * @param string $phone
      * @return string
+     * gets the country name from given phone
      */
     public static function getCountryName(string $phone): string
     {
@@ -74,6 +80,7 @@ class PhoneNumberDetailChecker
     /**
      * @param string $phone
      * @return string
+     * gets the country code from given phone
      */
     public static function getCountryCode(string $phone): string
     {

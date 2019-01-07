@@ -2,7 +2,9 @@
 
 use repositories\EntityCustomerRepository;
 
-
+/**
+ * returns all phone numbers
+ */
 function indexCustomersPhoneNumbers(): void
 {
     try {
@@ -15,9 +17,9 @@ function indexCustomersPhoneNumbers(): void
     echo json_encode($response);
 }
 
-
 /**
  * @param string $country
+ * returns all phone numbers from given country
  */
 function indexCustomersPhoneNumbersByCountry(string $country): void
 {
@@ -33,6 +35,7 @@ function indexCustomersPhoneNumbersByCountry(string $country): void
 
 /**
  * @param string $state
+ * returns all phone numbers with given country
  */
 function indexCustomersPhoneNumbersByState(string $state): void
 {

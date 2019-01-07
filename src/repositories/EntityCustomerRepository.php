@@ -9,6 +9,10 @@ use classes\entities\EntityCustomerConverter;
 
 class EntityCustomerRepository
 {
+    /**
+     * @return array
+     * returns all phone numbers on db.
+     */
     public static function findAllPhoneNumbers(): array
     {
         $dbConnection = new DBSqlLite();
@@ -18,6 +22,11 @@ class EntityCustomerRepository
         return EntityCustomerConverter::convertArrayStringIntoCustomersPhoneNumbers($queryResult);
     }
 
+    /**
+     * @param string $countryCode
+     * @return array
+     * returns all phone numbers on db by given country code.
+     */
     public static function findAllPhoneNumbersByCountry(string $countryCode): array
     {
         $dbConnection = new DBSqlLite();
@@ -27,6 +36,11 @@ class EntityCustomerRepository
 
     }
 
+    /**
+     * @param string $state
+     * @return array
+     * returns all phone numbers on db by given state.
+     */
     public static function findAllPhoneNumbersByState(string $state): array
     {
         if ($state != "all") {

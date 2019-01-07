@@ -2,13 +2,19 @@
 
 namespace classes\databases;
 
-use entities\Entity;
 use interfaces\IDatabaseBehaviour;
 use interfaces\IEntity;
 
 class DBSqlLite implements IDatabaseBehaviour
 {
+    /**
+     * @var string
+     */
     protected $connectionPath = "sqlite:C:/wamp64/www/RecruitmentExerciseJumia/database/sample.db";
+
+    /**
+     * @var \PDO
+     */
     protected $connection;
 
     /**
@@ -79,9 +85,6 @@ class DBSqlLite implements IDatabaseBehaviour
         return $isConnected;
     }
 
-    /**
-     *
-     */
     public function closeConnection(): void
     {
         $this->connection = null;
@@ -90,6 +93,7 @@ class DBSqlLite implements IDatabaseBehaviour
     /**
      * @param IEntity $entity
      * @return array
+     * gets all records from given entity.
      */
     public function getAll(IEntity $entity): array
     {
@@ -106,6 +110,7 @@ class DBSqlLite implements IDatabaseBehaviour
      * @param IEntity $entity
      * @param array $fields
      * @return array
+     * gets all records from given entity by given fields.
      */
     public function getAllByFields(IEntity $entity, array $fields): array
     {
@@ -123,6 +128,7 @@ class DBSqlLite implements IDatabaseBehaviour
      * @param array $fields
      * @param string $countryCode
      * @return array
+     * gets all records from given entity by given country code.
      */
     public function getAllByCountryCode(IEntity $entity, array $fields, string $countryCode): array
     {
@@ -142,6 +148,7 @@ class DBSqlLite implements IDatabaseBehaviour
     /**
      * @param string $query
      * @return array
+     * executes given query.
      */
     private function executeQuery(string $query): array
     {

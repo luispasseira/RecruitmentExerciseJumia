@@ -162,6 +162,7 @@ class EntityCustomer extends Entity implements \JsonSerializable
     /**
      ******* END SPECIFIC METHODS *******
      */
+
     /**
      * Specify data which should be serialized to JSON
      * @link http://php.net/manual/en/jsonserializable.jsonserialize.php

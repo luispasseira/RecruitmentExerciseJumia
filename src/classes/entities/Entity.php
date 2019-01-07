@@ -11,6 +11,9 @@ use interfaces\IEntity;
 
 class Entity implements IEntity
 {
+    /**
+     * @var int
+     */
     protected $id;
 
     /**
@@ -22,6 +25,7 @@ class Entity implements IEntity
 
     /**
      * @return array
+     * to be overridden.
      */
     public static function getTableFields(): array
     {
@@ -30,6 +34,7 @@ class Entity implements IEntity
 
     /**
      * @return string
+     * to be overridden.
      */
     public static function getTableName(): string
     {

@@ -22,7 +22,6 @@ class EntityCustomerConverter
         return $arrayCustomers;
     }
 
-
     /**
      * @param array $arrayCustomerPhoneNumber
      * @return EntityCustomer

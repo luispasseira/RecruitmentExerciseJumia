@@ -7,6 +7,7 @@ class PhoneNumberValidator
     /**
      * @param string $phone
      * @return bool
+     * validates Cameroon phone numbers
      */
     public static function isValidCameroonPhoneNumber(string $phone): bool
     {
@@ -16,6 +17,7 @@ class PhoneNumberValidator
     /**
      * @param string $phone
      * @return bool
+     * validates Ethiopia phone numbers
      */
     public static function isValidEthiopiaPhoneNumber(string $phone): bool
     {
@@ -25,6 +27,7 @@ class PhoneNumberValidator
     /**
      * @param string $phone
      * @return bool
+     * validates Morocco phone numbers
      */
     public static function isValidMoroccoPhoneNumber(string $phone): bool
     {
@@ -34,6 +37,7 @@ class PhoneNumberValidator
     /**
      * @param string $phone
      * @return bool
+     * validates Mozambique phone numbers
      */
     public static function isValidMozambiquePhoneNumber(string $phone): bool
     {
@@ -43,6 +47,7 @@ class PhoneNumberValidator
     /**
      * @param string $phone
      * @return bool
+     * validates Uganda phone numbers
      */
     public static function isValidUgandaPhoneNumber(string $phone): bool
     {
