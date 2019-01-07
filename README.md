@@ -5,13 +5,12 @@ The company asked to fetch data from a database, list and filter it according to
 
 ### Tech
 
-This solution was devloped on windows and, due to lack of time, I used WAMP server to be faster. 
+This solution was developed on windows and, due to lack of time, I used WAMP server to be faster. 
 Other technologies I used for the application run property were:
 
 * PHP - main point of this solution.
 * Bootstrap - the eyes also eat.
-* JQuery - had to use this because I'm very familiar with it.
-* HTML - duh...
+* JQuery - I'm very familiar with it.
 * DataTables - pagination were extra points.
 * PhpStorm - my favourite 
 * PHPUnit - it's always good to test our code.
@@ -27,11 +26,6 @@ Composer:
 ```sh
 $ sudo apt install composer
 $ composer install
-```
-
-PHPUnit:
-```sh
-$ composer require --dev phpunit/phpunit ^6
 ```
 
 For run the tests: 
