@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+ app:
+  build: .
+  image: jumia-docker:latest
+  ports:
+   - 65000:80
+  volumes:
+   - ./../app:/var/www/html/recruitment-jumia
+   - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
