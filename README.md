@@ -34,6 +34,13 @@ For run the tests:
 $ vendor/bin/phpunit tests/
 ```
 
+If you are familiar with docker, go to docker/ folder and run these commands:
+
+```sh
+$ docker-compose build
+$ docker-compose up
+```
+
 ### Development
 
 As I didn't use any development framework I had to adopt an organized, clear and coherent folder structure, and it goes as follows:
@@ -100,5 +107,5 @@ To run this app you need to run first WAMP or configured apache server and then 
 You have to change the connection path on DBSqlLite.php ($connectionPath) to the path of "sample.db" on your computer.
 
 ```sh
-localhost/
+localhost:65000
 ```
