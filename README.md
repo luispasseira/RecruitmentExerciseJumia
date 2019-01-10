@@ -125,8 +125,6 @@ As I didn't use any development framework I had to adopt an organized, clear and
 #### Run application
 To run this app you need to run first WAMP or configured apache server and then go to your localhost.
 
-You have to change the connection path on DBSqlLite.php ($connectionPath) to the path of "sample.db" on your computer.
-
 ```sh
 localhost:65000
 ```
