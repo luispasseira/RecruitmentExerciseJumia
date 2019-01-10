@@ -25,13 +25,18 @@ Other technologies I used for the application run property were:
 Requires an apache server, php interpreter, PHPUnit and composer, so it is best to install these. 
 If you are on Windows with WAMP installed, you only need composer and PHPUnit.
 
-Composer:
+PhpUnit:
+```sh
+$ sudo apt install phpunit
+```
+
+Composer, run this in app/ folder:
 ```sh
 $ sudo apt install composer
 $ composer install
 ```
 
-For run the tests: 
+To run the tests: 
 
 ```sh
 $ vendor/bin/phpunit tests/
