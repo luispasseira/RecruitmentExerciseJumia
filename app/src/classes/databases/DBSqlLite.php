@@ -10,7 +10,7 @@ class DBSqlLite implements IDatabaseBehaviour
     /**
      * @var string
      */
-    protected $connectionPath = "sqlite:C:/wamp64/www/RecruitmentExerciseJumia/database/sample.db";
+    protected $connectionPath = "sqlite:/var/www/html/recruitment-jumia/database/sample.db";
 
     /**
      * @var \PDO
@@ -56,7 +56,7 @@ class DBSqlLite implements IDatabaseBehaviour
     /**
      * @return \PDO
      */
-    public function getConnection(): ?\PDO
+    public function getConnection(): \PDO
     {
         return $this->connection;
     }
